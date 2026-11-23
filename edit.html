@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>Edit Expense</title>
+    <link rel="stylesheet" href="/static/style.css">
+</head>
+
+<body>
+
+
+<nav class="navbar">
+
+    <h2>💰 Expense Tracker</h2>
+
+    <div>
+        <a href="/">Home</a>
+        <a href="/add">Add Expense</a>
+        <a href="/view">View Expenses</a>
+    </div>
+
+</nav>
+
+
+
+<div class="container">
+
+<div class="card">
+
+<h1>✏️ Edit Expense</h1>
+
+
+<form method="POST">
+
+
+<label>Title</label>
+
+<input type="text" 
+       name="title" 
+       value="{{ expense.title }}"
+       required>
+
+
+<label>Amount</label>
+
+<input type="number"
+       name="amount"
+       value="{{ expense.amount }}"
+       required>
+
+
+<label>Category</label>
+
+<select name="category">
+
+<option>{{ expense.category }}</option>
+<option>Food</option>
+<option>Travel</option>
+<option>Shopping</option>
+<option>Bills</option>
+<option>Other</option>
+
+</select>
+
+
+<br><br>
+
+
+<button type="submit">
+    Update Expense
+</button>
+
+
+</form>
+
+
+</div>
+
+</div>
+
+
+</body>
+
+</html>
+Displaying edit.html.
