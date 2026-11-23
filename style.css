@@ -1,0 +1,204 @@
+/* General Styling */
+
+*{
+    box-sizing:border-box;
+    font-family:'Segoe UI', sans-serif;
+}
+
+
+body{
+    margin:0;
+    background:#f4f7fb;
+    color:#333;
+}
+
+
+
+/* Navigation Bar */
+
+.navbar{
+    background:#2563EB;
+    color:white;
+    padding:18px 50px;
+    display:flex;
+    justify-content:space-between;
+    align-items:center;
+}
+
+
+.navbar h2{
+    margin:0;
+    font-size:24px;
+}
+
+
+.navbar a{
+    color:white;
+    text-decoration:none;
+    margin-left:25px;
+    font-size:16px;
+}
+
+
+.navbar a:hover{
+    opacity:0.8;
+}
+
+
+
+/* Main Container */
+
+.container{
+    width:85%;
+    margin:40px auto;
+}
+
+
+
+/* Cards */
+
+.card{
+    background:white;
+    padding:30px;
+    border-radius:15px;
+    margin-bottom:25px;
+    box-shadow:0 5px 15px rgba(0,0,0,0.1);
+}
+
+
+.card h1,
+.card h2{
+    color:#2563EB;
+}
+
+
+
+/* Dashboard */
+
+.dashboard{
+    display:flex;
+    gap:25px;
+}
+
+
+.dashboard .card{
+    flex:1;
+    text-align:center;
+}
+
+
+
+/* Buttons */
+
+button{
+    background:#2563EB;
+    color:white;
+    border:none;
+    padding:12px 22px;
+    border-radius:8px;
+    cursor:pointer;
+    font-size:15px;
+    margin:5px;
+    transition:0.3s;
+}
+
+
+button:hover{
+    transform:scale(1.05);
+    background:#1d4ed8;
+}
+
+
+
+/* Forms */
+
+input,
+select{
+    width:100%;
+    padding:12px;
+    margin:10px 0 20px;
+    border-radius:8px;
+    border:1px solid #ccc;
+    font-size:15px;
+}
+
+
+label{
+    font-weight:bold;
+    color:#333;
+}
+
+
+
+/* Table */
+
+table{
+    width:100%;
+    border-collapse:collapse;
+    margin-top:20px;
+}
+
+
+th{
+    background:#2563EB;
+    color:white;
+    padding:12px;
+}
+
+
+td{
+    padding:12px;
+    text-align:center;
+    border-bottom:1px solid #ddd;
+}
+
+
+tr:hover{
+    background:#f1f5f9;
+}
+
+
+
+/* Category Badge */
+
+.badge{
+    background:#dbeafe;
+    color:#2563EB;
+    padding:5px 12px;
+    border-radius:20px;
+}
+
+
+
+/* Edit Button */
+
+.edit{
+    background:#16a34a;
+}
+
+
+.edit:hover{
+    background:#15803d;
+}
+
+
+
+/* Delete Button */
+
+.delete{
+    background:#dc2626;
+}
+
+
+.delete:hover{
+    background:#b91c1c;
+}
+
+
+
+/* Search Box */
+
+form{
+    margin-top:20px;
+}
+Displaying style.css.
