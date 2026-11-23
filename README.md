@@ -8,7 +8,7 @@ Expense Tracker is a web-based application developed to help users manage and tr
 - Flask
 - HTML
 - CSS
-- MySQL
+- MongoDB
 
 ## ✨ Features
 - Add new expenses
