@@ -1,0 +1,151 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>View Expenses</title>
+    <link rel="stylesheet" href="/static/style.css">
+</head>
+
+<body>
+
+
+<nav class="navbar">
+
+    <h2>💰 Expense Tracker</h2>
+
+    <div>
+        <a href="/">Home</a>
+        <a href="/add">Add Expense</a>
+        <a href="/view">View Expenses</a>
+    </div>
+
+</nav>
+
+
+
+<div class="container">
+
+    <div class="card">
+
+
+        <h1>📋 All Expenses</h1>
+
+
+        <!-- Search Section -->
+
+        <form action="/view" method="GET">
+
+            <input type="text"
+                   name="search"
+                   placeholder="Search by title or category">
+
+            <button type="submit">
+                🔍 Search
+            </button>
+
+        </form>
+
+
+        <br>
+
+
+        <table>
+
+
+            <tr>
+                <th>No.</th>
+                <th>Title</th>
+                <th>Amount</th>
+                <th>Category</th>
+                <th>Date</th>
+                <th>Action</th>
+            </tr>
+
+
+
+            {% if expenses|length == 0 %}
+
+            <tr>
+                <td colspan="6">
+                    No expenses found.
+                </td>
+            </tr>
+
+            {% endif %}
+
+
+
+            {% for expense in expenses %}
+
+
+            <tr>
+
+                <td>
+                    {{ loop.index }}
+                </td>
+
+
+                <td>
+                    {{ expense.title }}
+                </td>
+
+
+                <td>
+                    ₹ {{ expense.amount }}
+                </td>
+
+
+                <td>
+
+                    <span class="badge">
+                        {{ expense.category }}
+                    </span>
+
+                </td>
+
+
+                <td>
+                    {{ expense.date }}
+                </td>
+
+
+
+                <td>
+
+                    <a href="/edit/{{ expense._id }}">
+                        <button class="edit">
+                            ✏️ Edit
+                        </button>
+                    </a>
+
+
+                    <a href="/delete/{{ expense._id }}">
+                        <button class="delete">
+                            🗑️ Delete
+                        </button>
+                    </a>
+
+
+                </td>
+
+
+            </tr>
+
+
+            {% endfor %}
+
+
+
+        </table>
+
+
+    </div>
+
+
+</div>
+
+
+</body>
+
+</html>
+Displaying view.html.
