@@ -1,58 +1,87 @@
 # 💰 Expense Tracker
 
-## 📌 Project Overview
-Expense Tracker is a web-based application developed to help users manage and track their daily expenses. It provides a simple interface to record, view, edit and manage expense details.
+### 📌 Project Overview
 
-## 🛠️ Technologies Used
-- Python
-- Flask
-- HTML
-- CSS
-- MongoDB
+Expense Tracker is a web-based application developed using **Python and Flask** to help users manage and track their daily expenses. It provides a simple and user-friendly interface to add, view, search, edit, and delete expense records.
 
-## ✨ Features
-- Add new expenses
-- View recorded expenses
-- Edit existing expense details
-- Delete expenses
-- Manage expense records through a web interface
+### 🛠️ Technologies Used
 
-## 📂 Project Structure
+- 🐍 **Python** – Backend programming
+- 🌐 **Flask** – Web framework
+- 🍃 **MongoDB** – Database management
+- 🔗 **PyMongo** – MongoDB connectivity
+- 🧱 **HTML** – Webpage structure
+- 🎨 **CSS** – Styling and layout
+
+### ✨ Features
+
+- ➕ Add new expenses
+- 📋 View all recorded expenses
+- 🔍 Search expenses by title and category
+- ✏️ Edit existing expense details
+- 🗑️ Delete expense records
+- 🧮 Calculate the total number of expenses
+- 💵 Calculate the total amount spent
+
+### 📂 Project Structure
+
 ```text
 Expense-Tracker/
 │
 ├── app.py
-├── add.html
-├── edit.html
-├── index.html
-├── view.html
-├── style.css
-├── expenses.db
-├── README.md
-├── .gitignore
-└── Expense Tracker Project SS.docx
+│
+├── templates/
+│   ├── index.html
+│   ├── add.html
+│   ├── edit.html
+│   └── view.html
+│
+├── static/
+│   └── style.css
+│
+└── README.md
 ```
 
-## 🚀 How to Run the Project
+### 🗄️ Database
 
-1. Clone or download this repository.
-2. Open the project folder in VS Code.
-3. Install the required Python packages.
-4. Configure the database connection.
-5. Run the Flask application.
+This project uses **MongoDB** to store expense records.
+
+- **Database Name:** `expense_tracker`
+- **Collection Name:** `expenses`
+
+### ⚙️ Installation and Setup
+
+**1. Install Python**
+
+Make sure Python is installed on your system.
+
+**2. Install MongoDB**
+
+Install MongoDB and ensure that the MongoDB server is running.
+
+**3. Install Required Packages**
+
+Open the terminal in your project folder and execute:
+
+```bash
+pip install flask pymongo
+```
+
+**4. Run the Application**
 
 ```bash
 python app.py
 ```
 
-6. Open the local URL displayed in the terminal in your browser.
+**5. Open in Browser**
 
-## 📸 Project Screenshots
-Screenshots of the application will be added here.
+Open the local URL displayed in your terminal (usually `http://127.0.0.1:5000/`).
 
-## 🎯 Project Purpose
-This project was developed as an academic project to practise Python web development, database connectivity and CRUD operations.
+### 🎯 Project Purpose
 
----
-**Developed by:** Gargi Nalavade  
-**Course:** MSc Computer Science
+This project was developed as an academic project to gain practical experience in Python web development, Flask framework, MongoDB connectivity, and CRUD operations.
+
+### 👩‍💻 Developed By
+
+**Gargi Nalavade**  
+🎓 MSc Computer Science
