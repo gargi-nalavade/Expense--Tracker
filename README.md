@@ -22,17 +22,15 @@ Expense Tracker is a web-based application developed to help users manage and tr
 Expense-Tracker/
 │
 ├── app.py
-├── templates/
-│   ├── index.html
-│   ├── add.html
-│   ├── edit.html
-│   └── view.html
-│
-├── static/
-│   └── style.css
-│
+├── add.html
+├── edit.html
+├── index.html
+├── view.html
+├── style.css
+├── expenses.db
 ├── README.md
-└── expense.db
+├── .gitignore
+└── Expense Tracker Project SS.docx
 ```
 
 ## 🚀 How to Run the Project
